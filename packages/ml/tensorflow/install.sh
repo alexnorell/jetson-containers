@@ -53,7 +53,7 @@ if [ "$(echo "${TENSORFLOW_VERSION} <= 2.16.1" | bc 2>/dev/null || echo 0)" -eq 
     rm ${TENSORFLOW_WHL}
 else
     # install from the Jetson PyPI server ($PIP_INSTALL_URL)
-    pip3 install --no-cache-dir --verbose ${TENSORFLOW_VERSION}
+    pip3 install --no-cache-dir --verbose tensorflow==${TENSORFLOW_VERSION}
 fi
 
 # Verify the installation

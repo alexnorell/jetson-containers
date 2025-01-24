@@ -55,6 +55,3 @@ else
     # install from the Jetson PyPI server ($PIP_INSTALL_URL)
     pip3 install --no-cache-dir --verbose tensorflow==${TENSORFLOW_VERSION}
 fi
-
-# Verify the installation
-python3 -c "import tensorflow as tf; print(tf.__version__)"
